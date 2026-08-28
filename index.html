@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivek Yadav — Security Researcher</title>
+<meta name="description" content="Vivek Yadav — B.Tech Cybersecurity student and security researcher. Writeups on broken access control, CTF privilege escalation, and applied security projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="nav-logo" href="#top">Vivek Yadav</a>
+    <nav class="nav-links" aria-label="Section navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#writeups">Writeups</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero wrap" id="top">
+    <p class="eyebrow reveal">B.Tech Cybersecurity Student &amp; Security Researcher</p>
+    <h1 class="hero-title reveal">Vivek Yadav</h1>
+    <p class="hero-lede reveal">I research and write about broken access control — IDOR, privilege escalation, and misconfigured authorization — through CTF labs and PortSwigger's Web Security Academy. <span class="stat">13 writeups</span> published, ranked in the <span class="stat">top 15%</span> on TryHackMe.</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="#writeups">View writeups</a>
+      <a class="btn btn-secondary" href="https://github.com/ManX-Anon" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-secondary" href="#contact">Contact</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="wrap section" id="about">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2 class="section-title reveal">About</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>I'm a B.Tech Cybersecurity student focused on offensive security fundamentals — enumeration, exploitation, and access-control abuse — alongside blue-team basics like log analysis and detection. Most of my practical work centers on <strong>broken access control</strong>: IDOR, horizontal and vertical privilege escalation, and unprotected admin functionality, along with Linux privilege-escalation chains involving SUID misuse, cron misconfiguration, and group-membership pivots.</p>
+        <p>I've also completed cybersecurity job simulations with Telstra, Tata, and Mastercard, and worked through SOC fundamentals on LetsDefend. Outside of labs, I'm building a Linux shell from scratch in C++ to understand process control, signals, and job management at the OS level.</p>
+        <p>I'm working toward roles in <strong>security engineering, penetration testing, and ethical hacking</strong>, with a longer-term interest in network security, threat analysis, and digital forensics.</p>
+      </div>
+
+      <dl class="quick-facts reveal">
+        <div class="fact-row"><dt>Location</dt><dd>Dehradun, India</dd></div>
+        <div class="fact-row"><dt>Focus</dt><dd>Broken access control, Linux privilege escalation</dd></div>
+        <div class="fact-row"><dt>Currently</dt><dd>B.Tech, Cybersecurity</dd></div>
+        <div class="fact-row"><dt>Ranking</dt><dd>Top 15% — TryHackMe</dd></div>
+        <div class="fact-row"><dt>Writeups</dt><dd>13 published</dd></div>
+        <div class="fact-row"><dt>Status</dt><dd>Open to internships</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="wrap section" id="skills">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title reveal">Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <h3>Security testing</h3>
+        <ul class="tag-list">
+          <li>Burp Suite (Proxy, Repeater)</li>
+          <li>Access control testing</li>
+          <li>IDOR &amp; privilege escalation</li>
+          <li>Nmap &amp; enumeration</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Systems &amp; networking</h3>
+        <ul class="tag-list">
+          <li>Linux privilege escalation</li>
+          <li>Windows fundamentals</li>
+          <li>TCP/IP &amp; socket programming</li>
+          <li>Networking fundamentals</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Languages</h3>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>C++</li>
+          <li>C</li>
+          <li>Java</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Currently learning</h3>
+        <ul class="tag-list">
+          <li>Digital forensics</li>
+          <li>Threat analysis</li>
+          <li>Blue-team log analysis</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WRITEUPS -->
+  <section class="wrap section" id="writeups">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 class="section-title reveal">Writeups</h2>
+    </div>
+    <p class="section-lede reveal">Access-control research on PortSwigger's Web Security Academy, and a Linux privilege-escalation series from BreachLab's "Phantom" CTF track — three featured in InfoSec Write-ups.</p>
+
+    <ul class="writeup-list">
+      <li class="writeup-row reveal">
+        <div class="writeup-main">
+          <a class="writeup-title" href="https://vivek0x.medium.com/portswigger-lab-walkthrough-user-id-controlled-by-request-parameter-with-unpredictable-user-ids-0b28352e8980" target="_blank" rel="noopener">User ID Controlled by Request Parameter, with Unpredictable User IDs</a>
+          <span class="writeup-tag">IDOR</span>
+        </div>
+        <span class="writeup-meta">PortSwigger Academy</span>
+      </li>
+      <li class="writeup-row reveal">
+        <div class="writeup-main">
+          <a class="writeup-title" href="https://vivek0x.medium.com/portswigger-lab-walkthrough-user-id-controlled-by-request-parameter-horizontal-privilege-fbbd1fa324ce" target="_blank" rel="noopener">User ID Controlled by Request Parameter — Horizontal Privilege Escalation</a>
+          <span class="writeup-tag">Access control</span>
+        </div>
+        <span class="writeup-meta">PortSwigger Academy</span>
+      </li>
+      <li class="writeup-row reveal">
+        <div class="writeup-main">
+          <a class="writeup-title" href="https://vivek0x.medium.com/portswigger-web-security-academy-walkthrough-user-role-can-be-modified-in-user-profile-b706bbd0eae4" target="_blank" rel="noopener">User Role Can Be Modified in User Profile — Broken Access Control</a>
+          <span class="writeup-tag">Vertical privesc</span>
+        </div>
+        <span class="writeup-meta">PortSwigger Academy</span>
+      </li>
+      <li class="writeup-row reveal">
+        <div class="writeup-main">
+          <a class="writeup-title" href="https://vivek0x.medium.com/portswigger-lab-walkthrough-user-role-controlled-by-request-parameter-446e62903918" target="_blank" rel="noopener">User Role Controlled by Request Parameter</a>
+          <span class="writeup-tag">Access control</span>
+        </div>
+        <span class="writeup-meta">PortSwigger Academy</span>
+      </li>
+      <li class="writeup-row reveal">
+        <div class="writeup-main">
+          <a class="writeup-title" href="https://vivek0x.medium.com/access-control-vulnerabilities-unprotected-admin-functionality-with-unpredictable-url-1a3436277906" target="_blank" rel="noopener">Unprotected Admin Functionality with Unpredictable URL</a>
+          <span class="writeup-tag">Access control</span>
+        </div>
+        <span class="writeup-meta">PortSwigger Academy</span>
+      </li>
+      <li class="writeup-row reveal">
+        <div class="writeup-main">
+          <a class="writeup-title" href="https://vivek0x.medium.com/access-control-vulnerabilities-unprotected-admin-panel-de555e36a0b2" target="_blank" rel="noopener">Unprotected Admin Panel</a>
+          <span class="writeup-tag">Access control</span>
+        </div>
+        <span class="writeup-meta">PortSwigger Academy</span>
+      </li>
+      <li class="writeup-row reveal">
+        <div class="writeup-main">
+          <a class="writeup-title" href="https://vivek0x.medium.com/mission-breachlabs-phantom-7-local-authority-168a128ecd90" target="_blank" rel="noopener">Phantom 7 — Local Authority: Command Injection to Root</a>
+          <span class="writeup-tag">Privilege escalation</span>
+        </div>
+        <span class="writeup-meta">BreachLab</span>
+      </li>
+      <li class="writeup-row reveal">
+        <div class="writeup-main">
+          <a class="writeup-title" href="https://vivek0x.medium.com/phantom-level-6-scheduled-sins-cron-privilege-escalation-1347e369d384" target="_blank" rel="noopener">Phantom Level 6 — Scheduled Sins: Cron Privilege Escalation</a>
+          <span class="writeup-tag">Privilege escalation</span>
+        </div>
+        <span class="writeup-meta">BreachLab · InfoSec Write-ups</span>
+      </li>
+      <li class="writeup-row reveal">
+        <div class="writeup-main">
+          <a class="writeup-title" href="https://vivek0x.medium.com/phantom-5-file-authority-escalating-from-group-membership-to-root-a-linux-privilege-escalation-a5bec7f02b8c" target="_blank" rel="noopener">Phantom 5 — File Authority: Group Membership to Root</a>
+          <span class="writeup-tag">Privilege escalation</span>
+        </div>
+        <span class="writeup-meta">BreachLab · InfoSec Write-ups</span>
+      </li>
+      <li class="writeup-row reveal">
+        <div class="writeup-main">
+          <a class="writeup-title" href="https://vivek0x.medium.com/level-3-ctf-writeup-inheritance-b514a4ef5da7" target="_blank" rel="noopener">Phantom Level 3 — Inheritance</a>
+          <span class="writeup-tag">CTF</span>
+        </div>
+        <span class="writeup-meta">BreachLab · InfoSec Write-ups</span>
+      </li>
+    </ul>
+
+    <a class="see-all reveal" href="https://medium.com/@vivek0x" target="_blank" rel="noopener">+3 more writeups on Medium →</a>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="wrap section" id="projects">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2 class="section-title reveal">Projects</h2>
+    </div>
+    <p class="section-lede reveal">Networking and tooling projects — mostly built to learn protocols and systems by implementing them.</p>
+
+    <div class="project-grid">
+      <article class="project-card reveal">
+        <div class="project-top">
+          <h3 class="project-name">Tcp-Chat-App</h3>
+          <span class="project-lang">Python</span>
+        </div>
+        <p class="project-desc">A socket-based chat application built to explore TCP networking fundamentals — connection handling, framing, and client/server sockets.</p>
+        <a class="project-link" href="https://github.com/ManX-Anon/Tcp-Chat-App" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <h3 class="project-name">Weather-Suite</h3>
+          <span class="project-lang">Python</span>
+        </div>
+        <p class="project-desc">A weather data tool for fetching and working with live weather information.</p>
+        <a class="project-link" href="https://github.com/ManX-Anon/Weather-Suite" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <h3 class="project-name">phishing-awareness-training</h3>
+          <span class="project-lang">Web</span>
+        </div>
+        <p class="project-desc">A phishing-awareness training project, built on the same security-awareness thinking behind the Mastercard and Telstra simulations.</p>
+        <a class="project-link" href="https://github.com/ManX-Anon/phishing-awareness-training" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <h3 class="project-name">nextjs-ai-chatbot</h3>
+          <span class="project-lang">TypeScript</span>
+        </div>
+        <p class="project-desc">A Next.js AI chatbot project — exploring applied AI tooling alongside core security work.</p>
+        <a class="project-link" href="https://github.com/ManX-Anon/nextjs-ai-chatbot" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <h3 class="project-name">chatbot</h3>
+          <span class="project-lang">Python</span>
+        </div>
+        <p class="project-desc">An earlier conversational chatbot project.</p>
+        <a class="project-link" href="https://github.com/ManX-Anon/chatbot" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <h3 class="project-name">Linux Shell (from scratch)</h3>
+          <span class="project-lang">C++</span>
+        </div>
+        <p class="project-desc">An in-progress Linux shell — process control, job management, and signal handling, built to understand the OS layer beneath everyday tools.</p>
+        <a class="project-link" href="https://github.com/ManX-Anon" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="wrap section" id="certifications">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <h2 class="section-title reveal">Certifications</h2>
+    </div>
+
+    <div class="cert-table reveal">
+      <div class="cert-row cert-head">
+        <span>Certification</span>
+        <span>Issuer</span>
+        <span>Date</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Ghost Operative <a href="https://breachlab.org/u/goat18/certificate/ghost" target="_blank" rel="noopener" class="verify">Verify</a></span>
+        <span>BreachLab</span>
+        <span>May 2026</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">SOC Member</span>
+        <span>LetsDefend</span>
+        <span>Jun 2026</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Shift Scheduling</span>
+        <span>LetsDefend</span>
+        <span>Aug 2026</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Network Cable</span>
+        <span>LetsDefend</span>
+        <span>Aug 2026</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">The Cybersecurity Threat Landscape</span>
+        <span>LinkedIn Learning</span>
+        <span>Aug 2026</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Cybersecurity Job Simulation</span>
+        <span>Telstra AU (Forage)</span>
+        <span>Jan 2026</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Cybersecurity Analyst Job Simulation</span>
+        <span>Tata (Forage)</span>
+        <span>Jan 2026</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Cybersecurity Job Simulation</span>
+        <span>Mastercard (Forage)</span>
+        <span>Jan 2026</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">SQL &amp; Python (Basics)</span>
+        <span>HackerRank</span>
+        <span>Jan 2026</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Diploma in Computer Applications (DCA)</span>
+        <span>Regional Technology Centre</span>
+        <span>—</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="wrap section contact-section" id="contact">
+    <div class="section-head">
+      <span class="section-num">06</span>
+      <h2 class="section-title reveal">Contact</h2>
+    </div>
+    <div class="contact-block reveal">
+      <p class="contact-lede">Open to internships, research collaborations, and security-related opportunities.</p>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:blackadam7042@gmail.com">blackadam7042@gmail.com</a></li>
+        <li><span>GitHub</span><a href="https://github.com/ManX-Anon" target="_blank" rel="noopener">github.com/ManX-Anon</a></li>
+        <li><span>Medium</span><a href="https://medium.com/@vivek0x" target="_blank" rel="noopener">medium.com/@vivek0x</a></li>
+        <li><span>TryHackMe</span><a href="https://tryhackme.com/p/vivek18" target="_blank" rel="noopener">tryhackme.com/p/vivek18</a></li>
+        <li><span>HackTheBox</span><a href="https://profile.hackthebox.com/profile/019ce5a6-a723-72f3-8ef6-8bedf8608f3c" target="_blank" rel="noopener">HackTheBox profile</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p>© 2026 Vivek Yadav</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

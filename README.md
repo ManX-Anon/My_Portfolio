@@ -1,4 +1,4 @@
-# Portfolio — Vivek Yadav
+# Portfolio — [Vivek Yadav](https://vivek0x.netlify.app/)
 
 A minimal, professional portfolio site built with plain HTML, CSS, and JavaScript — no build step, no dependencies.
 
